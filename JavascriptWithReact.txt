@@ -1,0 +1,1153 @@
+Server=localhost;Database=master;Trusted_Connection=True;
+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
+
+!Introduction to .Net Framework
+! Variables
+1. Constructor
+  class name = function name
+  types of constructor:
+  a- default constructor: no parameters
+  b- parameterized constructor: with parameters
+
+2.  Properties and fields
+    it represent information that an object contains.
+3. Arrays and strings
+4. Indexers
+5. Inheritance
+6.Method hinding and over riding
+7. Polymorphism : static ra dynamic
+8. Structs and enums
+9. Abstract class and sealed class
+* Abstract class vs Interface class
+10. Delegate and events
+11. Partial class
+12. Collections
+12. Generics
+13. File IO
+13. LINQ
+14. Lamda Expressions
+15. try statements
+16. asynchronous programming
+
+----------------------------------------------------------------------------------------------------------
+   ## git bash command
+     1. ls
+     2. pwd
+    3. python
+
+
+
+    # start command
+       git config  --global user.name  yourname
+       git config --global user.email youremailid
+      code.--> this is for starting visual studio code
+    
+       init command
+      ->git init
+     --> git status
+
+####how to add file to staging area:
+  -->git add index.html
+  --> git status
+  --> git commit
+  
+# this should done if you have not given any message during commit. 
+  --->Initial commit
+   --->Escape +:wq +Enter
+  
+  ---> git status------ commit completed..
+
+
+
+ Now  to  add others file 
+   ---> touch contact.html
+   ----> touch about.html
+   -----> touch monuments.html
+  ----> git status
+
+ TO add all these files in staging area: 
+  ---->git add -A
+  ----> git status
+
+ NOw change the contact.html
+   After changing contact.html
+
+ ---> git add -A
+ ----> git status
+-----> git commit -m "added more html"
+
+Now completed one step for learning git.
+
+ 
+Example:if your contact.html is deleted:
+   ---->git status
+    ----> git checkout contact.html ---it matches with previous commit.
+    ------> git checkout -f ------ this command is for all changed file to match with previous commit.
+
+ Gitlog: this shows what you have committed
+----->git log
+ 
+ if you have many commit and you want to see only 5 commit:
+----->git log -p -5
+
+## Suppose you have modified any one file like contact.html
+   To see the differences between the previous and present file.
+  -------> git diff
+
+    
+
+### to compare staging area with last commit
+--------> git diff --staged
+
+###Again if you want to backup to last commit
+-----> git checkout -f
+
+####### If  you want to commit without adding to the staged area:
+   --------> git commit -a -m "skipped staging area and fixed"
+   ----> git log
+
+To clear terminal:
+----> clear
+
+----> git status
+ to list all the file use following command
+ -------------> ls
+
+
+####How to remove file:
+-----------> git rm --cached monuments.html --- this removes monuments.html from staging area.
+--------->git rm monuments.html -------this removes monuments.html permanently
+---------> git commit -a -m "Removing mounuments.html"
+----------> git log -p -2  -----to see previous 2 commit.
+
+
+
+#######To add git ignore file
+--------> touch .gitignore
+
+#####Branches in Git  ----
+-----------> git branch   ----- to check current branch.
+ ---------->git branch feature1 --- to make new branch named feature1
+ ----------> git checkout feature1 ---- to switch to branch feature1
+-----------> git checkout master ------- to switch to master branch
+------------> git  merge feature1 ---------  it merges feature1 branch to master branch.
+
+
+
+
+from datetime import date, datetime
+x = datetime.now()
+print(x)
+
+y=datetime.today().strftime('%m/%d/%Y')
+print(y)
+# def functional_days:
+#   date1 = date(2022, 4, 1)
+#   date2 = date(2022, 4, 10)
+today_format = datetime.strptime(08/08/2023, "%m/%d/%Y")
+print(today_format)
+
+to
+
+
+Date:- 10/15/2025
+### Let's learn javascript mastery
+1) What is javascript?
+_-> Javascript is and high level , interpreted programming language primarily used for making web pages interactive.
+for ex  <button onclick=alert("hi this is alert") > CLick me</button>
+  2) Variables:-
+
+		let  and const(block-scoped)
+ 		var(funciton-scoped)
+
+  3) Datatypes:-
+   a) String, integer, boolean, unidentified, null,
+4) Operators:-
+     assignment, arithmetic, boolean, comparision , ternary operator(like condition)
+5) Conditional Statements( if-else, switch case)
+6. Loops:-
+for, while, do() while(), 
+for example.  let items= ["banana", "apple", "mango"] 
+		for(let item of items( console.log(item)))
+7. Functions
+     for example 
+		function greet(name)
+			return "hello" + name
+	     	console.log(greet("Ram"))
+	
+	Arrow Function:-  const greet = (name) => "hello,$(name)"
+				console.log(greet("SUman"))
+
+8. 🎈 . Hoisting
+
+JavaScript moves variable & function declarations to the top of their scope before execution.
+
+Example: console.log(a);//undefined
+	var a= 10; but with let and const it will show error
+9. template literals:
+  const v="Ram"
+  const msg= "hello , $(v) , how are you"
+ console.log(msg)
+           
+
+10. Arrays and useful methods:-
+		1. Map:
+			let items= [1,2,3,4,5,6,7]
+			let newitems=items.map(n=>n*3)
+		2. Filter:
+			let onlyeven=items.filter(n=>n%2===0)
+		3. Reduce
+			let sum= items.reduce((a,b)=>a+b, 0)
+		Console.log(newitems, onlyeven, sum)
+
+
+
+11. Simple Mini-Project TO-Do Task:-
+	 let Todo = [ ];
+	function addTask(task){
+			Todo.push(task)
+			console.log("task added",task)
+				}
+		
+	funtion  showTask(){
+		console.log("List of task")
+		Todo.foreach(t,i) => console.log("$(i+1),$(t);
+		}
+
+		addTask("math")
+		addTask("english-homework")
+	showTask();
+
+
+
+
+🧩 Lesson 2: Objects, Arrays, and Functions (Deep Dive)
+   1. Objects-- It helps to stores data and behaviour together
+  			- for example   let person={ name : "himal",
+						course:"computer-programming", age: "23" 												greet:function (){Console.log(" hello, my name is $this.name")}}
+				person.greet();
+		We can make nested objects also. Also we can update, delete and add new data.
+ 
+
+2.. Arrays:-
+	Arrays are the ordered  collection of the data.
+		let fruits=["banana", "mango", "orange", "pineapple", "guava", "grapes"]
+		🔹 Common Array Methods
+	Method	Use		Example
+	push()	Add to end	fruits.push("grape")
+	pop()	Remove last	fruits.pop()
+	shift()	Remove first	fruits.shift()
+	unshift()	Add to start	fruits.unshift("kiwi")
+	indexOf()	Find index	fruits.indexOf("apple")
+	includes()	Check presence	fruits.includes("mango")
+	slice()	Copy part		fruits.slice(1,3)=== if new=fruits.slice(1,3) output=["mango", "orange"] but original fruits will be same.
+	splice()	Add/remove	fruits.splice(2,1,"melon") it removes one elements from index 2 and add "melon" and also here original array will be modified.
+		
+
+
+3. Callback Functions:-
+
+	This concept is used for ansynchronous javascript and you can pass function as arugument to function.1
+		For example:- function greet(name){ console.log("hi, $name");}
+				function prepocessor(callback){
+					let name="hari"
+				callback(name);
+					}
+				prepocessor(greet);
+
+⚡ 4. Spread & Destructuring:-
+			
+			🔹 Spread (...)--->Expands elements.
+				for ex.  let arr1=[1,2,3,4]
+					let arr2=[3,4]
+					arr3=[...arr1,...arr2]
+					console.log(arr3);  --> output- [1,2,3,4,3,4]
+			🔹 Destructuring-->Extract data easily.		
+					for ex. let person={age:24, name:"Raja"}
+			let {name, age}= person;
+				console.log("$(name),$ (age)")
+
+
+5. Mini-Project - Simple Finance Tracker4
+step1: push expense for each transaction
+step2: reduce total expenses
+step3:- show total expenses
+
+
+
+
+6. Local Storage (Browser Memory)
+  :- store key-value pairs that persist after refresh. FOr example localStorage.setItem("username", "Ram")
+							let user=localStorage.getItem("username")
+							console.log(user)
+							localStorage.removeItem("username")
+
+7. Json(JavaScript Object Notation):-
+	used for data exchange (API)
+		let item={name:"Victor", key:"Raja"}
+		let jsonStr=JSON.stringify(item);   // object to string
+		let jsonobj=JSON.parse(jsonStr);  //string to object
+
+
+
+8. Mini_Project- " Expense tracker with local storage"
+			<html>
+			<input id="desc" placeholder="description">
+			<input id="amount" type ="number" placeholder="amount">
+			<button id ="btn" >Add</button>
+			<ul id="list"></ul>
+
+			</html>
+
+			<script>
+				let add=document.querySelector("#btn")
+				let list=document.querySelector("#list")
+				let expenses = JSON.parse("localStorage.getItem("expenses")) || [ ];
+
+				funtion render(){
+				list.innerHtml=" ";
+                                                                            expenses.forEach(e=>{
+				let li= document.createElement("li");
+				li.textContent='$e.desc  _ $e.amount';
+				list.append(li);
+                                                                                          });
+				
+				
+				btn.addEventListener("click", ()  => {  
+				let desc=document.querySelector("#desc").value;
+				let amount=+document.querySelector("#amount").value;
+				expenses.push({desc, amount})
+				let expenses=JSON.stringify("localStorage.setItem(expenses));
+				render();
+						});
+				render();
+
+					
+			</script>
+
+
+###Asynchronous Programming:
+	Javascript runs in a synchronous way ie one line at a time from top to bottom by default.But  what if a task takes long time (like fetching data from API). In such case we use Asynchronous Programming. 
+Basic Example:
+	console.log("Start")
+	setTimeout(() , => { console.log("hi i am asynchronous function") , 2000}
+	console.log("End")
+ 		here javascript doesn't wait for setTimeout and continues to run . OUt put will be---   Start  End  hi i am asynchronous function
+
+
+1)  The Javascript Runtime and EventLoop:
+	Eventhough Javascript is a single-threaded it uses Runtime and Event Loop to do asynchronous tasks.
+	🧠 Process:
+
+	- JS executes code line by line (call stack).
+	- Long-running tasks (e.g. timers, HTTP requests) go to Web APIs.
+	- When done, their callbacks go to the callback queue.
+	- The event loop checks if the call stack is empty — then pushes callbacks from the queue into the stack.
+
+          📊 Diagram (simplified):
+	Call Stack  <——>  Event Loop  <——>  Callback Queue
+                                                          ↑
+                                                           |
+                                                     Web APIs
+
+  	Callback:
+		A Callback is an function which is passesd to another function in javascript and runs after certain task is finished
+		for ex:
+			function greet(name, callback)
+			{ 	console.log("hi "+ name);
+				callback();
+			}
+			function sayBye(){
+				console.log("Bye");}
+			greet("Hari", sayBye)
+
+
+	Promise:- 
+		A promise is an javascript object the eventually tells about successful completion of javascript task.
+		For ex:-     const myPromise = new Promise((resolve, reject) => {
+      				  // Simulate an asynchronous operation
+        							setTimeout(() => {
+         						   const success = true; // Or false for rejection
+          								  if (success) {
+              								  resolve("Data fetched successfully!");
+        								    } else {
+           									reject("Error fetching data.");
+        									}
+      								  }, 1000);
+  									  });
+
+					   		myPromise
+							  .then((result) => console.log(result)) // when resolved
+ 							 .catch((error) => console.log(error))  // when rejected
+  							.finally(() => console.log("Operation complete"));
+
+
+	⚡ 5. Async & Await (Modern Approach)
+			This is an modern approach which makes asynchronous code looks synchronous.
+				async function fetchData(){
+				console.log("fetch Data") ;
+				let data = await new Promise(resolve, reject)=> (setTimeOut()=> resolve("success"); 2000));
+				}
+				console.log(data);
+				fetchData();
+				
+				Fetch data from an external API:
+
+					async function getUsers() {
+ 							 try {
+    							let response = await fetch("https://jsonplaceholder.typicode.com/users");
+    							let users = await response.json();
+    							console.log(users);
+  							} catch (error) {
+   							 console.log("Error fetching users:", error);
+  									}
+								}
+
+							getUsers();
+				
+
+		🔁 2. The Event Loop — The “Traffic Controller”
+
+				The Event Loop decides when your asynchronous callbacks actually run.
+
+				Let’s visualize the main players 👇
+		
+ 						          ┌────────────────────────────┐
+					                             │                   Call Stack                              │
+ 						          └───────────▲─────────────── ┘
+       								 │
+      							         Event Loop 🔄
+            								 │
+						           ┌───────────┴────────────┐
+					                              │                Callback Queue            │  ← setTimeout, setInterval, etc.
+					                              │               (a.k.a. Macrotasks)       │
+ 						           └────────────────────────┘
+        								     │
+						              ┌───────────┴────────────┐
+						              │             Microtask Queue            │  ← Promises, async/await
+ 					                                 │                 (High Priority)              │
+ 						              └────────────────────────┘
+
+
+Stage 5: Parallel Asynchronous Patterns in JavaScript:
+		it’s time to learn how to manage multiple async tasks at once efficiently.
+	Promise Combinators (Parallel Async Patterns):-
+		JavaScript provides several built-in methods for running multiple Promises together, handling results, and reacting to completion or failure in flexible ways.
+		We’ll cover the four major ones:
+	⚡ 1. Promise.all():-
+		- Runs multiple promises in parallel and waits for all of them to finish.
+		- If any one promise rejects → the entire Promise.all() rejects.
+
+	🧠 2. Promise.allSettled():-
+		- Runs multiple promises in parallel but never fails completely —
+		- it waits for all to finish, and gives you their results even if some failed.
+
+			✅ Example:               const p1 = Promise.resolve("✅ Success");
+					const p2 = Promise.reject("❌ Error");
+					const p3 = Promise.resolve("✅ Done");
+					Promise.allSettled([p1, p2, p3]).then(results => console.log(results));
+
+		🏁 3. Promise.race()
+			- Returns the first promise that settles (either resolves or rejects).
+
+				✅ Example:
+				const p1 = new Promise(resolve => setTimeout(() => resolve("First"), 2000));
+				const p2 = new Promise(resolve => setTimeout(() => resolve("Second"), 1000));
+				Promise.race([p1, p2]).then(result => console.log(result));
+
+
+		🥇 4. Promise.any()
+
+			Similar to race(), but it ignores rejections —
+					it returns the first successful (fulfilled) result.
+
+					✅ Example:
+
+						const p1 = Promise.reject("❌ Failed 1");
+						const p2 = Promise.reject("❌ Failed 2");
+						const p3 = Promise.resolve("✅ Success 3");
+
+							Promise.any([p1, p2, p3])
+  							.then(result => console.log(result))
+  							.catch(err => console.log(err));
+
+
+			🧮 Summary Table
+				Method	              Resolves When      Rejects When                   		  Returns
+				Promise.all()	All succeed	Any fails			Array of values
+				Promise.allSettled()	All finish    	Never			Array of {status, value/reason}
+				Promise.race()	First settles	First rejects (if that’s first)	Single value or error
+				Promise.any()	First success	All fail			Single successful value
+
+
+
+🧩 Stage 6 — Concurrency & Async Iteration
+
+
+				async function* limitedFetch(urls, limit = 2) {
+					   const queue = [];
+  					for (const url of urls) {
+   					 const job = fetch(url).then(r => r.json());
+   					 queue.push(job);
+
+  					  if (queue.length >= limit) {
+     					 yield await Promise.race(queue);
+      					queue.splice(0, 1);
+    						}
+  						}
+
+				  while (queue.length) yield await queue.shift();
+}					// Consume results
+					async () => {
+  						const urls = Array.from({ length: 5 }, (_, i) =>
+ 						   `https://jsonplaceholder.typicode.com/posts/${i + 1}`
+							  );
+ 					                   for await (const data of limitedFetch(urls, 2)) {
+   						 console.log("Post:", data.title);
+ 									 }
+								})();
+
+
+#Lets Learn Next.js from scratch:-
+		Next.js is one of the powerful and in-demand framework for developing modern webapplication using React.js, it handles everything from  Server Side rendering (SSR) to static 		generation, APi routes and performance optimization.
+
+		⚙️ Why Next.js Exists
+		React alone handles UI rendering, but not:	
+		Routing
+		Data fetching
+		SEO optimization
+ 		Server rendering
+		Next.js fills these gaps and gives structure to your React app.
+
+
+1. File-based Routing
+	🏗️ Stage 2 — Next.js Features Overview
+		Each file inside the /pages directory automatically becomes a route.
+			Example:
+			pages/
+			 ├─ index.js        →  '/'
+ 			 ├─ about.js        →  '/about'
+			 ├─ blog/
+			 │   └─ [id].js     →  '/blog/:id'
+2. Pre-rendering
+	Next.js pre-renders every page for performance & SEO.
+
+	There are two types:
+
+		SSG (Static Site Generation) — builds pages at build time
+		SSR (Server-Side Rendering) — builds pages on each request
+
+		Type	When It Renders	Example
+		SSG	Build time	Blogs, portfolios
+		SSR	On each request	Dashboards, user pages
+
+
+3. API Routes
+		You can create backend APIs inside the same project! 😮
+		pages/api/hello.js
+			export default function handler(req, res) {
+  				res.status(200).json({ message: "Hello from API!" });
+				}
+		Now visit → /api/hello
+			✅ You just made a backend endpoint — no extra Express server needed!
+
+4. Data Fetching Methods
+		Method		Description		Runs Where
+		getStaticProps	Fetch data at build time	Server (SSG)
+		getServerSideProps	Fetch data on each request	Server (SSR)
+		getStaticPaths	Define dynamic SSG routes	Server (Build time)
+
+6. Built-in CSS and Styling Options
+		Global styles (styles/globals.css)
+		CSS Modules (Home.module.css)
+		Sass/SCSS support	
+		Tailwind CSS integration
+		Styled JSX or emotion/styled-components
+
+7. API Integration
+		You can call APIs:
+		From the client-side using fetch()
+		From the server-side using data fetching functions
+		Example:
+			export async function getStaticProps() {
+  				const res = await fetch('https://api.example.com/data');
+				  const data = await res.json();
+				  return { props: { data } };
+					}
+
+
+8. Deployment
+
+	Next.js is designed for Vercel, but you can also deploy to:
+		Netlify
+		AWS Amplify
+		Render
+		Docker / Custom servers
+
+			With one command:
+				npm run build
+				npm start
+
+
+🧩 Stage 4 — The Architecture
+MyApp/
+ ├─ pages/               → Routes (frontend + API)
+ │   ├─ index.js
+ │   ├─ about.js
+ │   └─ api/
+ │       └─ hello.js
+ ├─ public/              → Static assets (images, fonts)
+ ├─ components/          → Reusable React components
+ ├─ styles/              → CSS files
+ ├─ next.config.js       → Framework configuration
+ └─ package.json         → Dependencies
+
+
+
+#### let's learn React :-
+1) What is React?
+		Library for building UI components.
+		Break UI into reusable components (functions that return JSX).
+		Declarative: describe what UI should be, React figures out DOM updates.
+
+2) JSX (looks like HTML, inside JS)
+		// JSX example
+		const element = <h1>Hello, world!</h1>;
+		JSX compiles to React.createElement(...).
+		You can use JavaScript expressions inside {}: <p>{user.name}</p>.
+
+
+3) Components (Function components — modern)
+		// A simple component
+				function Greeting(props) {
+ 					 return <h2>Hello, {props.name}!</h2>;
+							}
+
+								// Usage
+							<Greeting name="Suman" />
+							Components are reusable UI pieces.
+							Props = read-only inputs to components.
+
+
+4) Props:-
+
+		Props are passed from parent to child.
+				Example:
+
+				function Card({ title, children }) {
+					  return (
+					    <div className="card">
+  						    <h3>{title}</h3>
+   						   {children}
+    						</div>
+						  );
+						}
+
+						// Use:
+						<Card title="My Card">
+						  <p>Card content</p>
+						</Card>
+
+5) State (component local mutable data)
+
+		--Use useState hook inside function components.
+
+		import React, { useState } from "react";
+
+		function Counter() {
+ 		 const [count, setCount] = useState(0); // 0 is initial value
+
+  		return (
+    			<div>
+      				<p>Count: {count}</p>
+      				<button onClick={() => setCount(c => c + 1)}>Increment</button>
+  			  </div>
+ 			 );
+				}
+		- Updating state re-renders the component.
+
+		- Use functional update (setCount(c => c + 1)) when new state depends on previous.
+6) Events
+
+	Use camelCase and pass handlers, not strings.
+		<button onClick={() => alert("clicked!")}>Click me</button>
+		<input onChange={(e) => setText(e.target.value)} />
+
+
+7) Simple combined example: Todo (client-side, minimal):-
+
+				import useState, react from React;
+				function ToDOApp()
+{
+				const[text, setText] = useState(" ");
+				const[todos, setTodos] = useState( [] );
+				
+				function addtodo(e){
+					  e.preventDefault(); // Prevents page reload when form submits
+					if ( ! text.trim()) return;  //  return if not text in the input;
+					setTodos( prev => [...prev, {id:Date.now(), text} ] );  // prev is the current version of the todos arr
+					setText("")
+
+				
+				function remove(id)
+				
+					{ setTodos(  prev=> prev.filter(t=> id != t.tid) } 
+
+
+				return (){
+					<div>
+
+					<form onSubmit= {addtodo}>
+						<input value={text} onChange={e => setText(e.target.value)}/>
+						<button> Add</button>
+						</form>
+					<ul>
+					{ todos.map(t=> ( <li key=t.id> { t.text} <button onclick={()=>remove(t.id)}>Remove</button>
+					</li> }
+					</ul> 
+
+						</div>
+
+					}
+
+
+lets practice again:-
+			
+import React, {useState} from react;
+	function TodoApp(){
+			
+		const [text, setText] = useState(" ")
+		const [todos , setTodos] = useState([])]
+		
+		function addtodo(e){
+			
+			e.preventdefault(); // stops automatic rendering
+			if(!e.text.trim()) return;
+			setTodos( prev => [...prev, {id:Date.now(), e.text}]);
+			setText("");
+			
+				
+			}
+		function remove(id){
+ 			setTodos(prev => prev.filter (t=>(id ! = t.id));
+
+				
+		return(){
+			<div>
+				<form onSubmit={addtodo}>
+				<input value={text} onChange=setText{e=>e.target.value()} placeholder="enter the task">
+				<button> Add </button>
+				</form>
+			<ul>
+				{ todos.map( t => return (<li key=t.id>  {t.text} <button onClick={()=>remove(t.id)}> Remove</button></li>))}
+	
+				</ul>
+
+
+			</div>
+}
+
+}
+
+				
+
+React — Lesson 2: useEffect, Lifecycle & Side Effects
+
+		-->A side effect is anything your component does that affects the outside world or depends on something outside itself:
+			Fetching data (HTTP)
+			Subscribing to events (window resize, websockets)
+			Timers (setTimeout, setInterval)
+			Manually manipulating the DOM or third-party libraries
+
+
+	2) useEffect basics
+                                                                import React, { useState, useEffect } from "react";
+
+			useEffect(() => {
+			  // side effect code here
+				});
+				Runs after the component renders (after paint).
+				By default, it runs after every render (mount + update)
+				Return value:
+
+				useEffect(() => {
+					  // start effect
+						  return () => {
+						    // cleanup: runs before next effect or on unmount
+							  };
+							});
+
+				3) Dependency array — controlling when effect runs
+						useEffect(() => {
+						  console.log("runs once on mount");
+						}, []); // empty array → run once when component mounts (and cleanup on unmount)
+
+						useEffect(() => {
+						  console.log("runs when `value` changes");
+							}, [value]); // runs when `value` changes
+
+						Rules:
+
+							[] → mount only.
+							[a, b] → run whenever a or b change.
+							Omit dependencies → runs after every render (usually not desired).
+							Always include variables you use inside the effect (or intentionally exclude with caution).
+				4) Cleanup function and unmounting
+				Use the cleanup to remove listeners, cancel timers, or unsubscribe:
+
+					useEffect(() => {
+  							const onResize = () => console.log(window.innerWidth);
+ 							 window.addEventListener("resize", onResize);
+ 							 return () => window.removeEventListener("resize", onResize);
+								}, []);
+						Cleanup runs before the next effect (on dependency change) and on unmount
+
+
+		7) Example: Data fetching with loading & error states + cancellation
+					import React, { useState, useEffect } from "react";
+
+						function PostsList() {
+							  const [posts, setPosts] = useState([]);
+							  const [loading, setLoading] = useState(true);
+  							  const [error, setError] = useState(null);
+
+  						useEffect(() => {
+   						 const controller = new AbortController();
+						    setLoading(true);
+    							setError(null);
+
+    						fetch("https://jsonplaceholder.typicode.com/posts", { signal: controller.signal })
+							      .then(res => {
+        						if (!res.ok) throw new Error("Network response not OK");
+    							    return res.json();
+ 								     })
+  							    .then(data => setPosts(data))
+   							   .catch(err => {
+     						   if (err.name !== "AbortError") setError(err);
+  									    })
+      							.finally(() => setLoading(false));
+							 return () => controller.abort(); // cleanup on unmount or dependency change
+							  }, []); // empty means run once on mount
+
+							  if (loading) return <p>Loading...</p>;
+							  if (error) return <p>Error: {error.message}</p>;
+								  return (
+							    <ul>
+							      {posts.map(p => <li key={p.id}>{p.title}</li>)}
+							    </ul>
+								  );
+								}
+
+Same code using async/await () function :-
+				import React, { useState, useEffect } from "react";
+				function PostsList() {
+				  const [posts, setPosts] = useState([]);
+  				const [loading, setLoading] = useState(true);
+ 				 const [error, setError] = useState(null);
+
+ 				 useEffect(() => {
+  				  const controller = new AbortController();
+
+    					// define an async function inside useEffect
+    						const fetchPosts = async () => {
+   						   try {
+  						      setLoading(true);
+   						     setError(null);
+
+  						      const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+ 						         signal: controller.signal,
+							        });
+						        if (!res.ok) {
+         							 throw new Error("Network response not OK");
+      								  }
+
+    							    const data = await res.json();
+        								setPosts(data);
+     							 } catch (err) {
+       								 if (err.name !== "AbortError") {
+        									  setError(err);
+      										  }
+     								 } finally {
+     								   setLoading(false);
+									      }
+								    };
+
+						fetchPosts();
+    						// cleanup function to cancel request if component unmounts
+ 							   return () => controller.abort();
+ 								 }, []);
+
+  							// rendering part
+  						if (loading) return <p>Loading...</p>;
+ 						 if (error) return <p>Error: {error.message}</p>;
+  
+						  return (
+ 								   <ul>
+   								   {posts.map(p => (
+    								    <li key={p.id}>{p.title}</li>
+    									  ))}
+								    </ul>
+							  );
+							}
+
+						export default PostsList;
+
+
+Component Mounts
+      │
+      ▼
++-----------------------------+
+| Initialize State Variables: |
+| posts = []                  |
+| loading = true              |
+| error = null                |
++-----------------------------+
+      │
+      ▼
+First Render Happens
+      │
+      ▼
+UI shows:
+"Loading..."
+      │
+      ▼
+useEffect() Runs (after render)
+      │
+      ▼
+Create AbortController
+(controller = new AbortController())
+      │
+      ▼
+Reset States:
+loading = true
+error = null
+      │
+      ▼
+Start Fetch Request:
+fetch("https://jsonplaceholder.typicode.com/posts",
+      { signal: controller.signal })
+      │
+      ▼
+--------------------------------------------
+| Fetching Data from Network (Async)       |
+--------------------------------------------
+      │
+      ▼
+Network Responds → .then() executes
+      │
+      ▼
+Check if res.ok
+ ├── Yes → Parse JSON → res.json()
+ └── No  → throw new Error("Network response not OK")
+      │
+      ▼
+JSON Data Arrives → setPosts(data)
+      │
+      ▼
+React Re-renders Component:
+posts = [ {id:1, title:"..."}, ... ]
+loading still = true (until finally)
+      │
+      ▼
+.finally() runs → setLoading(false)
+      │
+      ▼
+React Re-renders again
+      │
+      ▼
+Conditionals in render:
+if (loading) → false
+if (error)   → false
+=> Display <ul><li>Post Titles</li></ul>
+      │
+      ▼
+User Navigates Away (Component Unmounts)
+      │
+      ▼
+Cleanup Function Runs:
+controller.abort()
+      │
+      ▼
+If fetch still pending → cancel it safely
+      │
+      ▼
+Component removed — no memory leaks ✅
+
+
+
+
+
+	🧠 What is useRef in React?
+
+			---> useRef is a React Hook that lets you store a value or DOM element that persists between renders, without causing re-renders.
+				🧩 Syntax
+					const refName = useRef(initialValue);
+					refName.current → holds the current value
+					Updating refName.current does not trigger a re-render
+
+
+
+			⚙️1️⃣ Use Case:      - Accessing DOM Elements (like document.querySelector)
+
+					In React, instead of directly using DOM selectors, we use refs.
+
+						Example:	import React, { useRef } from "react";
+
+								function InputFocus() {
+								  const inputRef = useRef(null);
+								 function handleClick() {
+   								 inputRef.current.focus(); // Focus the input field
+ 									 }
+
+ 									 return (
+   										 <div>
+    										  <input ref={inputRef} placeholder="Type something..." />
+     										 <button onClick={handleClick}>Focus Input</button>
+   										 </div>
+ 										 );
+											}
+
+          				- We also use useRef for preventing rerender .
+						import React, { useState, useRef, useEffect } from "react";
+
+										function Timer() {
+ 										 const [count, setCount] = useState(0);
+										  const timerId = useRef(null);
+
+  										useEffect(() => {
+   									timerId.current = setInterval(() => setCount(c => c + 1), 1000);
+   									 return () => clearInterval(timerId.current);
+ 										 }, []);
+
+										  return <h1>Seconds: {count}</h1>;
+											}
+
+				- Also we user useRef for holding previous value.
+					import React, { useEffect, useRef, useState } from "react";
+					function PreviousValueExample() {
+  					const [name, setName] = useState("");
+  					const prevName = useRef("");
+					 useEffect(() => {
+   							 prevName.current = name;
+								  }, [name]);
+					 return (
+    						<div>
+      						<input
+      						  value={name}
+      						  onChange={e => setName(e.target.value)}
+       						 placeholder="Enter name"
+      							/>
+      						<p>Current: {name}</p>
+     						 <p>Previous: {prevName.current}</p>
+						    </div>
+  						);
+						}
+
+
+
+
+ONE SMALL PROJECT SHOWING USE OF USEREF AND USE HOOK
+
+				src/App.js__>
+					import React, { useState } from "react";
+					import Timer from "./Timer";
+					function App() {
+ 					 const [showTimer, setShowTimer] = useState(true);
+
+ 					 return (
+    					<div style={{ padding: 20 }}>
+      					<h1>useEffect interval + cleanup demo</h1>
+
+      					<button onClick={() => setShowTimer(prev => !prev)}>
+        					{showTimer ? "Unmount Timer (stop)" : "Mount Timer (start)"}
+     					 </button>
+
+    						  <hr />
+
+     					 {showTimer ? (
+     						   <Timer />
+     						 ) : (
+      					  <p>The Timer component is unmounted. Check console for "Cleanup done!"</p>
+     							 )}
+    						</div>
+						  );
+						}		
+					export default App;
+
+
+
+
+___src/Timer.js__
+
+import React, { useEffect } from "react";
+
+function Timer() {
+  useEffect(() => {
+    // Effect: start the interval
+    const interval = setInterval(() => {
+      console.log("Tick");
+    }, 1000);
+
+    // Cleanup function: runs when the component unmounts
+    return () => {
+      clearInterval(interval);
+      console.log("Cleanup done!");
+    };
+  }, []); // empty dependency array -> run once on mount
+
+  return (
+    <div style={{ marginTop: 16 }}>
+      <p>Timer is running. Open your browser console to see "Tick" every second.</p>
+      <p>Click the button above to unmount the Timer and trigger cleanup.</p>
+    </div>
+  );
+}
+
+export default Timer;
+
+					
+						___index.js___
+
+						import React from "react";
+						import { createRoot } from "react-dom/client";		
+						import App from "./App";
+
+						const root = createRoot(document.getElementById("root"));
+						root.render(<App />);
+
+
+When the app mounts and the Timer component mounts:
+
+Tick
+Tick
+Tick
+... (every 1 second)
+
+
+When you click the button to unmount the Timer:
+Cleanup done!
+
+
+
+
+Everything depends how do you think and make logic 
+In react if you can play with components you can build anything.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wise bring camera menu 
+rude cheap message transfer 
+they glory primary melt
