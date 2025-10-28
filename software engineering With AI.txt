@@ -1,0 +1,197 @@
+Slide 1 --Why we build Tools:
+- Humans design tools to extednd their power to act on the world.
+1. Physical toolsamplify strength, precision and endurance.
+2. Cognitive tools extend perception, reasoning and memory.
+3. Informed tools act more optimally using internal representations of the world.
+
+These tools don't just support thinking they also execute actions better and faster.
+Automation arise s when informed tools perform repetitive or reactive actions reliably without direct humna control.
+We build tools not only to think better or act stronger but to act better because we know.
+
+Slide-2 --(What is a System):
+--> A system is a set interacting components producing obeservable effects in the world.
+Systems are always physically embodied, even informational ones.
+Information systems act through data and control but remain physicall process (electical, mechanical, human)
+When a system integrates a representation of its environment, it becomes informed capable of optimizing and coordinating action.
+
+Slide-3--From tool to informed system (human-centered):
+An informed system includes a model: an internal , symbolic description of the external world. 
+The model allows humans using or supervising the system to - anticipate outcomes more accurately, make better  decisions, act more efficiently through the system's mediation. 
+Such systems amplify human cognition and operational capability- they extend our ability to reason and to act
+The model doesn't make the system intelligent ; it makes humans more capable by embedding part of thier part of their knowledge into the tool. 
+Informd systems are intelligent beigns = they are amplifiers of human intelligence and action.
+
+Slide-4 -- Mathematics: The language of Modeling:
+Mathematics is the universal language for building models.
+It translates physical structure and causality into symbolic form.
+Equations, logic and algorithms describe how things relate and change.
+Computing is thus mathematical manipulation of representations, enabling reasoning reasoning and prediction.
+
+
+
+
+Slide5- Computer Science=/ study of Computers 
+-- Electrical Engineering studies computers as physical devices.
+-- Computer Science studies computing as a natural phenomenon: how information transforms within physical systems.
+It unites three paradigmsl- mathematics what can be computed
+science= how computtaion behaves in nature.
+Engineering- how to build systems
+
+Slide6- Computation Defined
+Computation -= a finite sequence of transformations applied a representation of reality.
+These transformations are isomporphic to real physical operations
+Computation connects:
+- Symbolic casuality (within the model}
+- Physical causality (in the exterenal world.)
+It's how thought becomes executable, how abstraction becomes action.
+Computation is the logic of transformation made physical.
+
+
+
+Slide7- What is Software
+ Software is a representation of the world, relalized  as a process of transformations executed by a machine.
+Three interdependent aspects:
+1. Physical: stored and executed as electcrical states.
+2. Mathematical : Data + logic = formal model of the world
+3. procedural: algorithmic trnsformations on that model
+Executing software is trnasofming symbolic representatiaons to trigger corresponding physical effects.
+Software unites representation and automation a tool that both models and acts.
+Software is matter that models, and modelling acts too,
+
+
+
+Slide8- The Dual Nature of Instructions
+- Instruction has two levels:
+1. At CpU level" directs electronic microp-operations
+2. At system level : directs concrete effects (move arm , open valve, display info)
+Software combines semantic intention and physical causation, linking human purpose(why) to machine execution (how)
+
+Slide 9- Two Classes of ALgorithmic WOrlds
+Deterministic algorithms rely on  deduction - applying known rules.
+Stochastic algorithms rely on induction inerring structure form observations
+The world is pregominantly uncertain : parameters drift, data is incomplete, systetm
+Hence the rise of probabilistic and data-driven computation.
+
+Slide10- From Cognitive imitation to statisifation
+
+Machine learning - class of statitistical algorihtm for acting 
+
+
+
+Slide 11--  Software  Engineering as a Socio-Technical Descipline
+SE is socio-technical it unites
+
+
+
+
+Slide-12 WHat software engineering Builds 
+SE desgins the software models and prcess that make those systems informed 
+System Engineering designs systems that act on the physical world.
+Outputs: architectures, services, data models, pipelines, verification, assets, monitoring systems.
+Two purposes: amplify human reasoning and enable automation humans decide why;   SE specifies how intent becomes operational reality 
+
+
+
+
+Slide 13- Life Cycles as Naturally Logical Models
+- Life cycles( Waterfall, Spiral, Agile, DeveOps) are naturally logical representations of human reasoning.
+- They describe how humans solve problems structurally and naturally not how they must behave.
+- The invariant natural logic:.  U
+- Understand-> Formalize-> Compute-> Observe-> Adjust
+- THese cycles are descriptive, not prescriptive- they map cognition to transformation and embodiment.
+- life cycles are naturally evolging coginitive maps of reasoning and actions
+
+
+Slide 14- The Natural Problem- Solving Sequence 
+- This chain models the natural reasoning process humans follow to turn ideas into effective actions.
+- it forms a two-way dialogue between business and business, mediated by the tool; needs in the problem space --- actions in the solution space.
+-
+
+Slide-15-   Adapting the Life Cycle for Data-Driven Systems
+- When uncertainity dominates, data becomes the new mateiral of modeling 
+- The logical life-cycle extends naturally:
+1. Data sourcing and governace--> define scope, consent, leverage
+2. Collection & Labelling
+3. Cleaning & Preparation
+4. Feature Correction/ Representation
+5. Model Specification
+6. Computational Inference
+7. Validation
+8. Deployment 
+9. Monitoring & Drift detection
+10- DeveOps make 
+
+
+Slide-15-- The Devops Perspective
+- SE operates across two intertwined domains:
+- 1. User-side operations- deployment, reliability and user feedback
+- 2. Developer-side operations- integration, testing, continuous delivery.
+-  DevOps fuses both via continuous feedback, automation, and shared responsibility.
+- The goal: reduce uncertainity in both product and process by shortening feedback cycles and increasing observability.
+- DevOps makes software engineering a living system of continuous learning and adjustment.
+
+
+Slide-16- Ai as a Partner in Engineering (AI4SE)
+- AI tools assist enginners across the lifecycle, enhancing awareness and productivity.
+- Example Requirements:detect ambiguity, cluster user stories,, generate tracebility matrices , design: puropse architectures or interface sketches., Implementation: code completion, transaltion, static analysis.
+- Testing: generate test cases, detect anomalies in logs
+- Mantainance: refactoring documents synthesis, change impact prediction.
+
+ -The systems do not automate creativity but stabilize cognition- they reduce overload and incertainity.
+ - Integrating AI within pipelines  extends the relexive capacity of the process: tools that help humans reason about their own reasoning.
+
+Slide-17 - The Reflexive Feedback Loop
+- The same logic that drives DevOps centers on reflexivity: the process observing and improving itself.
+- Feedback levels:
+    1. System observe their users.
+    2. Engineers observe systems.
+    3. Orgainzations observe engineering outcomes.
+
+The reflexive cycle becomes multi-layered : System
+
+
+
+Slide-18- MLOps: Two Dimensions of Reflexivity
+- MLOps as lifecyle for ML-Based Products
+  - Extends DevOps to handle data and model artifacts.
+  - Typical pipeline: Data-> Preparation-> Training-> Validation-> Deployment-> Monitoring->Retraomomg
+- Goals: reproducibility, tracibility, controlled feedback under uncertainity.
+- Models are living
+
+
+- MLOps as Reflexive Extension of Engineering
+
+
+Slide-19: LLMOps: The Semantic Extension
+- LLMops generalizes MOps to knowledge-driven systems.
+- New operational materials 
+
+
+Slide_ Ethical and Epistemic Perspectives
+- AI doesn not replace humna reaasoning - it extends awareness and resoponsibility.
+- Engineering remais a human-centered act of judgement.
+- The goal is to design system that expand the range of human understanding and capability, not substitute for them.
+- Ethical reflection is not an optional layer- it is part of the architecture of trustworthy systems.
+- The future of Software Engineering depends on cultivating reflexivity, ethics and system intelligence together.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
