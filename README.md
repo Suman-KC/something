@@ -17,7 +17,7 @@
 ## 🎯 **Step 1: Prepare Your Database Connection String**
 
 ### **A. Here is your Server's Public IP/Hostname**
-## 217.217.249.145
+## 217.217.249.145 this will be useful for putting custom domain
 
 You need to know how Vercel will connect to your MySQL database.
 
@@ -247,10 +247,11 @@ Your Unity-Ed app is now live and accessible from anywhere in the world!
 For your records, here are all the environment variables used:
 
 ```env
-DATABASE_URL=mysql://unityed_root:o4.Q-kZifAXLi.O@YOUR_SERVER:3306/unityed_unity_ed
-NEXTAUTH_URL=https://your-app.vercel.app
-NEXTAUTH_SECRET=your-generated-secret
-NODE_ENV=production
+DATABASE_URL="mysql://unityed:%23%3F%5BtvG%23UPv0%7Dq8vV@147.93.153.72:3306/unityed_unity_ed_db"
+NEXTAUTH_URL="https://unityed.site"
+NEXTAUTH_SECRET="hJeIY7lmRrD3Ad/3i3nVrAjfqAaIehfcjsLYc1IL0Nc="
+NODE_ENV="production"
+
 ```
 
 Save these securely!
